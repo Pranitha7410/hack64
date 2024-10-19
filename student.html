@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Course Selection</title>
+    <link rel="stylesheet" href="student1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Course Selection</h1>
+        <form id="courseForm">
+            <div id="courseList">
+                <!-- Courses will be dynamically inserted here -->
+            </div>
+            <button type="submit" class="submit-btn">Submit Selection</button>
+        </form>
+        <div id="summary" class="hidden">
+            <h2>Selected Courses Summary</h2>
+            <div id="selectedCourses"></div>
+            <button id="giveFeedbackBtn">Give Feedback</button>
+        </div>
+    </div>
+   <!-- Feedback Form Modal -->
+   <div class="feedback-overlay" id="feedbackOverlay"></div>
+
+   <div class="feedback-popup" id="feedbackPopup">
+       <h2>Course Feedback</h2>
+       <form id="feedbackForm">
+           <label for="feedbackName">Your Name:</label>
+           <input type="text" id="feedbackName" name="feedbackName" required>
+   
+           <label for="feedbackEmail">Your Email:</label>
+           <input type="email" id="feedbackEmail" name="feedbackEmail" required>
+   
+           <label for="feedbackMessage">Your Feedback:</label>
+           <textarea id="feedbackMessage" name="feedbackMessage" rows="4" required></textarea>
+   
+           <button type="submit">Submit Feedback</button>
+       </form>
+   </div>
+    <script src="student2.js"></script>
+</body>
+</html>
