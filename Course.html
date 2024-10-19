@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm" onsubmit="return validateLogin()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required placeholder="Alice"><br><br>
+            <label for="regdno">Registration Number:</label>
+            <input type="text" id="regdno" required placeholder="REG001"><br><br>
+            <h4><mark>For Checking the site Please Type the Same as Mentioned.</mark></h4><br>
+            <p><mark>Note:See the full reference list of students for the Name and Registration No: that is provided as an list format.</mark></p>
+            <button type="submit">Login</button>
+        </form>
+        <p id="errorMessage" style="color:yellow;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
